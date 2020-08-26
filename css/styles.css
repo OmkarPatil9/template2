@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: black;
+  color: darkred;
+}
+
+hr {
+  width: 80%;
+  display: inline-block;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+h2 {
+  text-decoration: underline;
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+  background-color: black;
+}
+.nav-link {
+  color: darkred !important;
+}
+
+.navbar-toggler {
+  background-color: darkred;
+  margin-right: 15px;
+}
+
+.topcon {
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(133, 0, 0, 0) 25%,
+      rgba(133, 0, 0, 0.5)
+    ),
+    url("../images/back.jpg");
+  background-size: cover;
+  color: red;
+  text-align: center;
+  padding-top: 19%;
+  margin-bottom: -25px;
+  z-index: -1;
+}
+.topcon h1 {
+  font-size: 4.5rem;
+}
+
+.midcon {
+  width: 98%;
+  display: inline-block;
+  padding-top: 70px;
+  z-index: 1;
+  background-color: #f1f1e8;
+  margin: 0 auto;
+  border: 1px;
+  box-shadow: 3px -9px 13px #888;
+  border-radius: 5px;
+}
+
+.middet {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.middet section {
+  display: flex;
+  max-width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: 7px 0;
+  background-color: lightgray;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.middet section img {
+  border-radius: 4px;
+}
+
+.coldet {
+  max-width: 50%;
+  margin-left: 27px;
+}
+
+.coldet p {
+  text-align: left;
+}
+
+.botcon {
+  padding-top: 50px;
+  background-color: lightgrey;
+  z-index: -1;
+  margin-top: -25px;
+}
+
+.fa-instagram {
+  color: white;
+  background-color: hotpink;
+  border-radius: 5px;
+}
+
+.fa-facebook-square {
+  color: blue;
+}
+
+.container-fluid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.container-fluid .column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width: 720px) {
+  /* styles for narrow screens */
+  .topcon {
+    max-width: 100vh;
+    max-height: 281px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .middet section {
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 7px 0;
+  }
+
+  html,
+  body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+
+  .middet {
+    padding: 0 5px;
+  }
+}
+
+.animate__animated {
+  animation-duration: 1.5s;
+}
